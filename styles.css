@@ -122,6 +122,11 @@ nav ul li a:hover {
     z-index: 1;
 }
 
+marquee {
+    font-size: 25px;
+    color: #f03a17;
+}
+
 /* Cards for About Section */
 #about {
     background-color: #1c1c1c;  
@@ -143,6 +148,7 @@ nav ul li a:hover {
     gap: 30px; /* Use gap for consistent spacing */
     max-width: 1200px; /* Limit the width for larger screens */
     margin: 0 auto; /* Center the container */
+    
 }
 
 button {
@@ -150,6 +156,7 @@ button {
     border: 2px solid #f03a17;
     position: relative;
     top: 50px;
+    right: 10%;
     overflow: hidden;
     background-color: transparent;
     text-align: center;
@@ -183,6 +190,11 @@ button {
    
    button:hover {
     color: #111;
+}
+
+button{  
+    margin-right: 50px;
+    margin-top: 1px;
 }
 
 .card-link {
@@ -238,8 +250,31 @@ button {
     padding: 0;
 }
 
+/* Center the entire section content */
+
+#booking, #locate {
+    text-align: center;
+    padding: 10%;
+  }
+  
+  #booking .section-title, #locate .section-title {
+    margin-bottom: 20px;
+  }
+  
+  #locate .map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Center-align the map and college info */
+  .map, .college-info {
+    margin: 10px;
+  }
+  
 /* Responsive Styles */
 @media (max-width: 768px) {
+
     #particles-js {
         position: absolute;
         width: 100%;
