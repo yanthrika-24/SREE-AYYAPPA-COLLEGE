@@ -285,6 +285,7 @@ button{
     margin-top: 10px; /* Adds space above the important note */
     font-weight: bold; /* Makes the important note bold */
     letter-spacing: 2px;
+    text-align: left;
 }
 
 strong{
