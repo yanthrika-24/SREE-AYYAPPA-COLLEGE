@@ -271,6 +271,25 @@ button{
   .map, .college-info {
     margin: 10px;
   }
+
+ #important-updates {
+    text-align: center;
+    margin: 20px; /* Adds space around the entire section */
+    padding: 15px; /* Adds space inside the section */
+    border: 1px solid #ccc; /* Optional: adds a border for better visibility */
+    border-radius: 5px; /* Optional: rounds the corners of the border */
+    background-color: #1c1c1c; /* Optional: sets a light background color */
+}
+
+.important-note {
+    margin-top: 10px; /* Adds space above the important note */
+    font-weight: bold; /* Makes the important note bold */
+    letter-spacing: 2px;
+}
+
+strong{
+    color: red;
+}
   
 /* Responsive Styles */
 @media (max-width: 768px) {
