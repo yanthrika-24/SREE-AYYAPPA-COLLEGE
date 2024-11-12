@@ -271,10 +271,10 @@ button{
   .map, .college-info {
     margin: 10px;
   }
-
- #important-updates {
+  
+  #important-updates {
     text-align: center;
-    margin: 20px; /* Adds space around the entire section */
+    margin: 15%; /* Adds space around the entire section */
     padding: 15px; /* Adds space inside the section */
     border: 1px solid #ccc; /* Optional: adds a border for better visibility */
     border-radius: 5px; /* Optional: rounds the corners of the border */
@@ -290,7 +290,37 @@ button{
 strong{
     color: red;
 }
-  
+
+table {
+    width: 80%; /* Makes the table take the full width */
+    border-collapse: collapse; /* Merges borders for a cleaner look */
+    margin: 20px 0; /* Adds margin above and below the table */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Light gray border around cells */
+    padding: 12px; /* Adds padding inside cells */
+    text-align: center; /* Aligns text to the left */
+}
+
+th {
+    background-color: #0e0e0e; /* Green background for header */
+    color: rgb(181, 14, 14); /* White text for header */
+    font-size: 2.1em; /* Slightly larger font for header */
+}
+
+tr:nth-child(even) {
+    background-color: #4913ec; /* Light background for even rows */
+}
+
+caption {
+    font-size: 1.5em; /* Larger font for the table caption */
+    margin: 10px; /* Margin around the caption */
+    font-weight: bold; /* Makes the caption bold */
+    text-align: center;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
 
