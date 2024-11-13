@@ -292,6 +292,10 @@ strong{
     color: red;
 }
 
+#bus-schedule {
+    margin: 20%; 
+}
+
 table {
     width: 80%; /* Makes the table take the full width */
     border-collapse: collapse; /* Merges borders for a cleaner look */
@@ -321,6 +325,47 @@ caption {
     font-weight: bold; /* Makes the caption bold */
     text-align: center;
 }
+
+
+.sponsor-slider {
+    position: relative;
+    width: 300px; /* Set width as needed */
+    height: 200px; /* Set height as needed */
+    overflow: hidden;
+}
+
+.sponsor-slide {
+    position: absolute;
+    top: 50%;
+    left: -100%; /* Start off-screen left */
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: all 1s ease;
+}
+
+.sponsor-slide img {
+    width: 150px; /* Set image size */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.sponsor-slide p {
+    font-size: 1.2rem;
+    color: #a1a1a1;
+}
+
+.sponsor-slide.active {
+    left: 0;
+    opacity: 1;
+}
+
+.sponsor-slide.out {
+    left: 100%; /* Slide out to the right */
+    opacity: 0;
+}
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
