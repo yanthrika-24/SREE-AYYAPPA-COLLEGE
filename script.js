@@ -108,3 +108,26 @@ hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('active');
   hamburger.classList.toggle('active');
 });
+
+const slides = document.querySelectorAll('.sponsor-slide');
+let currentSlide = 0;
+
+function showNextSlide() {
+    slides[currentSlide].classList.remove('active'); // Fade out and slide out current slide
+    slides[currentSlide].classList.add('out');
+
+    // Set next slide
+    currentSlide = (currentSlide + 1) % slides.length;
+
+    // Reset previous slide's class after animation completes
+    setTimeout(() => {
+        slides.forEach(slide => slide.classList.remove('out'));
+    }, 1000);
+
+    // Fade in and slide in next slide
+    slides[currentSlide].classList.add('active');
+}
+
+// Start the slideshow
+showNextSlide();
+setInterval(showNextSlide, 5000); // Change slide every 3 seconds
